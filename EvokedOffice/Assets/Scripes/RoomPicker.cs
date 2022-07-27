@@ -9,7 +9,7 @@ public class RoomPicker : MonoBehaviour
 
     public List<GameObject> plots;
 
-    void Update()
+    void Start()
     {
         Instantiate(plots[Random.Range(0, plots.Count)], Room.transform);
         
