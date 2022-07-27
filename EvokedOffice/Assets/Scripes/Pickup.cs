@@ -15,7 +15,7 @@ public class Pickup : MonoBehaviour
         
      if (Input.GetKeyDown(KeyCode.F))
      {
-            if (heldOBj != null)
+            if (heldOBj == null)
             {
 
                 RaycastHit hit;
