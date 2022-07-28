@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.28982732, g: 0.31545296, b: 0.3679245, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.71555716, g: 0.7266401, b: 0.754717, a: 1}
+  m_SubtractiveShadowColor: {r: 0.63919544, g: 0.6851726, b: 0.7924528, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -319,7 +319,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583032325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -466,10 +466,8 @@ MonoBehaviour:
   SpawnP8: {fileID: 41299380}
   SpawnP9: {fileID: 1011309180}
   plots:
-  - {fileID: 1513875419506909291, guid: c37f88a00430b1c4a811d59b2304e883, type: 3}
-  - {fileID: 4417141314092399911, guid: 7a56a5f585fccd04d90b42d0abb2ee78, type: 3}
-  - {fileID: 2435596813503694439, guid: 8b764c815eb55ef41babbaa3d1229056, type: 3}
-  - {fileID: 5738937281423516159, guid: 8e6c58592dee6f84ca56cbeb4b3fea7f, type: 3}
+  - {fileID: 3782311261760445668, guid: 93660bf82b53c4742809049657a4d892, type: 3}
+  - {fileID: 870101870296756285, guid: 344c51dd76ace6b469758f2d2aca7164, type: 3}
 --- !u!4 &706274985
 Transform:
   m_ObjectHideFlags: 0
@@ -951,7 +949,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1148,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2939776627820245051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40, y: 25.8, z: -16}
+  m_LocalPosition: {x: 47.8, y: 30.7, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
