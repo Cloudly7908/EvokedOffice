@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7771474973659996450}
   - component: {fileID: 6662522341074448007}
   - component: {fileID: 8904460394014726733}
+  - component: {fileID: 6224813009638544392}
   m_Layer: 0
   m_Name: Office wall
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6224813009638544392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958628758788504472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0020000003, y: 0.019999996, z: 0.03499999}
+  m_Center: {x: 0, y: 0, z: 0.007499998}

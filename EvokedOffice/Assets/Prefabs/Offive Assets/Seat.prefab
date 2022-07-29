@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8465594893712827656}
   - component: {fileID: 5953515706423038402}
   - component: {fileID: 1147952436722511596}
+  - component: {fileID: 6315987333114884353}
   m_Layer: 0
   m_Name: Seatfbx
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b953fe0b1d1a11344bd3151bb2401f5e, type: 2}
+  - {fileID: 2100000, guid: e5988b95b81b1fb4daf16a4de53643fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,8 +96,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.008270243, y: 0.008270245, z: 0.015131511}
-  m_Center: {x: 0, y: 0, z: -0.0015693681}
+  m_Size: {x: 0.01, y: 0.01, z: -0.007}
+  m_Center: {x: 0, y: 0, z: -0.006}
+--- !u!65 &6315987333114884353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305203586872012823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008270243, y: 0.002, z: 0.015131511}
+  m_Center: {x: 0, y: -0.003, z: -0.0015693681}
 --- !u!1 &5362909708714973236
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +152,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5362909708714973236}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
