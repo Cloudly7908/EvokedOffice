@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5953515706423038402}
   - component: {fileID: 1147952436722511596}
   - component: {fileID: 6315987333114884353}
+  - component: {fileID: 80420359448014070}
   m_Layer: 0
   m_Name: Seatfbx
   m_TagString: Untagged
@@ -111,6 +112,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008270243, y: 0.002, z: 0.015131511}
   m_Center: {x: 0, y: -0.003, z: -0.0015693681}
+--- !u!208 &80420359448014070
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305203586872012823}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.004, y: 0.004, z: 0.008}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.002}
+  m_TimeToStationary: 0.5
 --- !u!1 &5362909708714973236
 GameObject:
   m_ObjectHideFlags: 0

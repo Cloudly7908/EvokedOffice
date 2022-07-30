@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8688170405833161860}
   - component: {fileID: 6878795132069464142}
   - component: {fileID: 2034128927285222936}
+  - component: {fileID: 1718911244606070102}
   m_Layer: 0
   m_Name: Glass Office wall
   m_TagString: Untagged
@@ -100,3 +101,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: df1fea7c223f91e4b97cca9d55791a6f, type: 3}
+--- !u!208 &1718911244606070102
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933306132283287963}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.001, y: 0.010000001, z: 0.017}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.007}
+  m_TimeToStationary: 0.5

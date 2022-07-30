@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 5203383108947455083}
   - component: {fileID: 158323694248751109}
   - component: {fileID: 3128797740717942575}
+  - component: {fileID: 5596107146293394606}
   m_Layer: 0
   m_Name: Cubicle
   m_TagString: Untagged
@@ -161,3 +162,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.001, y: 0.020502994, z: 0.020000005}
   m_Center: {x: 0.009, y: 0.00025149394, z: 0}
+--- !u!208 &5596107146293394606
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996223145034059198}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.010000001, y: 0.010000001, z: 0.010000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 4888003296755195143}
   - component: {fileID: 7219650978068883917}
   - component: {fileID: 2806237705182315735}
+  - component: {fileID: 4167993367571394170}
   m_Layer: 0
   m_Name: Vending
   m_TagString: Untagged
@@ -150,3 +151,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020436298, z: 0.031999994}
   m_Center: {x: 0, y: -0.00021815156, z: -0.0010000004}
+--- !u!208 &4167993367571394170
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165289373459499032}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.010000001, y: 0.010000001, z: 0.016}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5
