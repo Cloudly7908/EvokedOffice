@@ -22,6 +22,7 @@ public class Pickup : MonoBehaviour
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
                     PickUpObject(hit.transform.gameObject);
+                     
                 }
             }
             else
@@ -41,6 +42,16 @@ public class Pickup : MonoBehaviour
 
     void MoveObject()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            holdParent.rotation *= Quaternion.Euler(0, 90, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            holdParent.rotation *= Quaternion.Euler(90, 0, 0);
+        }
+
         if (Vector3.Distance(heldOBj.transform.position, holdParent.position) > 0.1f)
         {
             Vector3 moveDistance = (holdParent.position - heldOBj.transform.position);
@@ -60,6 +71,7 @@ public class Pickup : MonoBehaviour
 
             objRig.transform.parent = holdParent;
             heldOBj = pickObj;
+            holdParent.rotation *= Quaternion.Euler(0, 0, 0);
         }
     }
 
