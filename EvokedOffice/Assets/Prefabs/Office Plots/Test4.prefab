@@ -8011,7 +8011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613917896182060973}
   m_Layer: 0
-  m_Name: Plot 4
+  m_Name: Test4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
