@@ -71,7 +71,6 @@ public class Pickup : MonoBehaviour
 
             objRig.transform.parent = holdParent;
             heldOBj = pickObj;
-            holdParent.rotation *= Quaternion.Euler(0, 0, 0);
         }
     }
 

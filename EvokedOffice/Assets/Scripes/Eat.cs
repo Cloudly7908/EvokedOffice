@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Eat : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerStay(Collider collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            eat();
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void eat()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Destroy(gameObject);
+        }
     }
 }
