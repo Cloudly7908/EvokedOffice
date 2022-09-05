@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 458972122907659970}
   - component: {fileID: 2430378090491755016}
   - component: {fileID: 1571694556260859045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4933347449419828023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tv
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public float pickUpRange = 5;
-    public float moveForce = 250;
+    public float moveForce = 150;
     public Transform holdParent;
 
     private GameObject heldOBj;
@@ -42,14 +42,14 @@ public class Pickup : MonoBehaviour
 
     void MoveObject()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q))
         {
-            holdParent.rotation *= Quaternion.Euler(0, 90, 0);
+            holdParent.rotation *= Quaternion.Euler(0, 1, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
-            holdParent.rotation *= Quaternion.Euler(90, 0, 0);
+            holdParent.rotation *= Quaternion.Euler(1, 0, 0);
         }
 
         if (Vector3.Distance(heldOBj.transform.position, holdParent.position) > 0.1f)
@@ -65,7 +65,7 @@ public class Pickup : MonoBehaviour
         {
             Rigidbody objRig = pickObj.GetComponent<Rigidbody>();
             objRig.useGravity = false;
-            objRig.drag = 10;
+            objRig.drag = 6;
             objRig.freezeRotation = true;
 
 

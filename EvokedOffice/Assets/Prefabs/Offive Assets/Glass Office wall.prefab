@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6878795132069464142}
   - component: {fileID: 2034128927285222936}
   - component: {fileID: 1718911244606070102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass Office wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

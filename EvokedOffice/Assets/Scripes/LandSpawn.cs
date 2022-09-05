@@ -14,6 +14,7 @@ public class LandSpawn : MonoBehaviour
     public GameObject SpawnP8;
     public GameObject SpawnP9;
 
+
     public List<GameObject> plots;
 
     void Start()
@@ -27,6 +28,7 @@ public class LandSpawn : MonoBehaviour
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP7.transform);
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP8.transform);
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP9.transform);
+
     }
 
    
