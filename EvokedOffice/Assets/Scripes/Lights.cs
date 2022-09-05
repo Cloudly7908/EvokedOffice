@@ -19,6 +19,7 @@ public class Lights : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI timeText;
 
+    bool sleepTime = false;
 
     private DateTime currentTime;
 
@@ -30,6 +31,7 @@ public class Lights : MonoBehaviour
         myMaterial.SetColor("_EmissionColor", on);
         RenderSettings.ambientLight = on;
         Debug.Log("LightsOn");
+        sleepTime = false;
 
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
     }
@@ -57,6 +59,7 @@ public class Lights : MonoBehaviour
             myMaterial.SetColor("_EmissionColor", off);
             RenderSettings.ambientLight = offoff;
             Debug.Log("LightsOff");
+            sleepTime = true;
         }
 
         if (currentTime.Hour == LighsON)
@@ -66,7 +69,33 @@ public class Lights : MonoBehaviour
             myMaterial.SetColor("_EmissionColor", on);
             RenderSettings.ambientLight = on;
             Debug.Log("LightsOn");
+            sleepTime = false;
         }
 
+        void OnTriggerStay(Collider collision)
+        {
+            if (collision.gameObject.CompareTag("Sleep"))
+            {
+                sleep();
+            }
+         
+        }
+
+        void sleep()
+        {
+
+            if (sleepTime == true && (Input.GetKeyDown(KeyCode.E)))
+            {
+              Color on = new Color(0.775f, 0.806f, 0.904f, 1);
+              myMaterial.color = on; ;
+              myMaterial.SetColor("_EmissionColor", on);
+              RenderSettings.ambientLight = on;
+              Debug.Log("LightsOn");
+              sleepTime = false;
+
+              currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
+                
+            }
+        }
     }
 }

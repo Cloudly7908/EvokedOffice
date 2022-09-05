@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
-
     public Transform orientation;
 
     float horizontalInput;
@@ -71,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -226,8 +226,10 @@ public class PlayerMovement : MonoBehaviour
 
         // on ground
         else if (grounded)
+            {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
+             }
         // in air
         else if (!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
