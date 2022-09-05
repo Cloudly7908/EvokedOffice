@@ -41,6 +41,33 @@ public class Lights : MonoBehaviour
         UpdateTimeOfDay();
     }
 
+    void OnTriggerStay(Collider collision)
+    {
+        Debug.Log("asdgfadfD fdfvf");
+        if (collision.gameObject.CompareTag("Sleep"))
+        {
+            sleep();
+
+        }
+    }
+
+
+    void sleep()
+    {
+
+        if (sleepTime == true && (Input.GetKeyDown(KeyCode.E)))
+        {
+            Color on = new Color(0.775f, 0.806f, 0.904f, 1);
+            myMaterial.color = on; ;
+            myMaterial.SetColor("_EmissionColor", on);
+            RenderSettings.ambientLight = on;
+            Debug.Log("LightsOn");
+            sleepTime = false;
+
+            currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
+        }
+    }
+
     private void UpdateTimeOfDay()
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
@@ -49,53 +76,27 @@ public class Lights : MonoBehaviour
         {
             timeText.text = currentTime.ToString("HH:mm");
         }
-        Debug.Log(timeText.text);
 
         if (currentTime.Hour == LighsOFF)
         {
             Color off = new Color(0.0849f, 0.0896f, 0.1132f, 1);
-            Color offoff = new Color(0.06f, 0.06f, 0.06f, 1);
+            Color offoff = new Color(0.14f, 0.16f, 0.18f, 1);
             myMaterial.color = off;
             myMaterial.SetColor("_EmissionColor", off);
             RenderSettings.ambientLight = offoff;
-            Debug.Log("LightsOff");
             sleepTime = true;
         }
 
         if (currentTime.Hour == LighsON)
         {
-            Color on = new Color(0.775f, 0.806f, 0.904f, 1);
+            Color on = new Color(0.875f, 0.806f, 0.904f, 1);
             myMaterial.color = on; ;
             myMaterial.SetColor("_EmissionColor", on);
-            RenderSettings.ambientLight = on;
-            Debug.Log("LightsOn");
             sleepTime = false;
         }
 
-        void OnTriggerStay(Collider collision)
-        {
-            if (collision.gameObject.CompareTag("Sleep"))
-            {
-                sleep();
-            }
-         
+ 
         }
 
-        void sleep()
-        {
-
-            if (sleepTime == true && (Input.GetKeyDown(KeyCode.E)))
-            {
-              Color on = new Color(0.775f, 0.806f, 0.904f, 1);
-              myMaterial.color = on; ;
-              myMaterial.SetColor("_EmissionColor", on);
-              RenderSettings.ambientLight = on;
-              Debug.Log("LightsOn");
-              sleepTime = false;
-
-              currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
-                
-            }
-        }
-    }
+       
 }
