@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public float pickUpRange = 5;
-    public float moveForce = 150;
+    public float moveForce = 250;
     public Transform holdParent;
 
     private GameObject heldOBj;
@@ -65,7 +65,7 @@ public class Pickup : MonoBehaviour
         {
             Rigidbody objRig = pickObj.GetComponent<Rigidbody>();
             objRig.useGravity = false;
-            objRig.drag = 6;
+            objRig.drag = 5;
             objRig.freezeRotation = true;
 
 
