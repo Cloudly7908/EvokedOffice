@@ -89,9 +89,11 @@ public class Lights : MonoBehaviour
 
         if (currentTime.Hour == LighsON)
         {
-            Color on = new Color(0.875f, 0.806f, 0.904f, 1);
+            Color on = new Color(0.775f, 0.806f, 0.904f, 1);
             myMaterial.color = on; ;
             myMaterial.SetColor("_EmissionColor", on);
+            RenderSettings.ambientLight = on;
+            Debug.Log("LightsOn");
             sleepTime = false;
         }
 
