@@ -67,6 +67,7 @@ public class Pickup : MonoBehaviour
             objRig.useGravity = false;
             objRig.drag = 5;
             objRig.freezeRotation = true;
+            objRig.mass = 1;
 
 
             objRig.transform.parent = holdParent;
@@ -80,6 +81,7 @@ public class Pickup : MonoBehaviour
         heldrig.useGravity = true;
         heldrig.drag = 1;
         heldrig.freezeRotation = false;
+        heldrig.mass = 10;
 
         heldOBj.transform.parent = null;
         heldOBj = null;

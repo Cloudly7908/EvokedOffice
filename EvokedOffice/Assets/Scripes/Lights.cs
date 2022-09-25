@@ -43,7 +43,7 @@ public class Lights : MonoBehaviour
 
     void OnTriggerStay(Collider collision)
     {
-        Debug.Log("asdgfadfD fdfvf");
+        
         if (collision.gameObject.CompareTag("Sleep"))
         {
             sleep();
