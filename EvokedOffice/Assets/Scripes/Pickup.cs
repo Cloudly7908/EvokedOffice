@@ -9,11 +9,12 @@ public class Pickup : MonoBehaviour
     public Transform holdParent;
 
     private GameObject heldOBj;
+
     void Update()
     {
        
-        
-     if (Input.GetKeyDown(KeyCode.F))
+
+        if (Input.GetKeyDown(KeyCode.F))
      {
             if (heldOBj == null)
             {
@@ -21,8 +22,7 @@ public class Pickup : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
-                    PickUpObject(hit.transform.gameObject);
-                     
+                    PickUpObject(hit.transform.gameObject);   
                 }
             }
             else
@@ -42,12 +42,12 @@ public class Pickup : MonoBehaviour
 
     void MoveObject()
     {
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetMouseButton(0))
         {
             holdParent.rotation *= Quaternion.Euler(0, 1, 0);
         }
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetMouseButton(1))
         {
             holdParent.rotation *= Quaternion.Euler(1, 0, 0);
         }
@@ -81,9 +81,11 @@ public class Pickup : MonoBehaviour
         heldrig.useGravity = true;
         heldrig.drag = 1;
         heldrig.freezeRotation = false;
-        heldrig.mass = 10;
+        heldrig.mass = 100;
 
         heldOBj.transform.parent = null;
         heldOBj = null;
     }
+
+  
 }
