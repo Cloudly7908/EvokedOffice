@@ -20,6 +20,15 @@ public class LandSpawn : MonoBehaviour
     public GameObject SpawnP14;
     public GameObject SpawnP15;
     public GameObject SpawnP16;
+    public GameObject SpawnP17;
+    public GameObject SpawnP18;
+    public GameObject SpawnP19;
+    public GameObject SpawnP20;
+    public GameObject SpawnP21;
+    public GameObject SpawnP22;
+    public GameObject SpawnP23;
+    public GameObject SpawnP24;
+    public GameObject SpawnP25;
 
 
     public List<GameObject> plots;
@@ -42,6 +51,15 @@ public class LandSpawn : MonoBehaviour
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP14.transform);
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP15.transform);
         Instantiate(plots[Random.Range(0, plots.Count)], SpawnP16.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP17.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP18.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP19.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP20.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP21.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP22.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP23.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP24.transform);
+        Instantiate(plots[Random.Range(0, plots.Count)], SpawnP25.transform);
 
     }
 
