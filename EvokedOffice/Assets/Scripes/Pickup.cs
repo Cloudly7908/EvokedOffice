@@ -22,7 +22,7 @@ public class Pickup : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
-                    PickUpObject(hit.transform.gameObject);   
+                    PickUpObject(hit.transform.gameObject);
                 }
             }
             else
@@ -67,8 +67,7 @@ public class Pickup : MonoBehaviour
             objRig.useGravity = false;
             objRig.drag = 5;
             objRig.freezeRotation = true;
-            objRig.mass = 1;
-
+            objRig.mass = 2;
 
             objRig.transform.parent = holdParent;
             heldOBj = pickObj;
@@ -81,7 +80,7 @@ public class Pickup : MonoBehaviour
         heldrig.useGravity = true;
         heldrig.drag = 1;
         heldrig.freezeRotation = false;
-        heldrig.mass = 100;
+        heldrig.mass = 50;
 
         heldOBj.transform.parent = null;
         heldOBj = null;
