@@ -1416,3 +1416,9 @@ Received Import Request.
   path: Assets/Scripes/Pickup.cs
   artifactKey: Guid(67dbf01023b164546b8a4cf32f06f121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripes/Pickup.cs using Guid(67dbf01023b164546b8a4cf32f06f121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13ead63509c58d81504a69c1cfc3cb4') in 0.024209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 162.946539 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e358e5e2af8246daa4c0d38470ca01') in 0.003146 seconds 

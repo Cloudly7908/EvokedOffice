@@ -1143,7 +1143,7 @@ MonoBehaviour:
   SpawnP25: {fileID: 1785013502}
   plots:
   - {fileID: 4513424527127485024, guid: 3b4d90d706fce334e805d3f7d22867fa, type: 3}
-  - {fileID: 1819843815602650173, guid: 87663ee2ca051fc4ebb702700f9a4740, type: 3}
+  - {fileID: 7698576540655930561, guid: 7dd2e578e094c444fb9324d8cbb5a518, type: 3}
   - {fileID: 6803207064981187379, guid: 4fe1c8259f79845418ce3a55a99a47d2, type: 3}
   - {fileID: 6381719681907911664, guid: fedf2158503a21349bec0dfd98d09069, type: 3}
 --- !u!4 &706274985
